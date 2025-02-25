@@ -31,7 +31,7 @@ export default function ProfileWithID() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`https://boolean-api-server.fly.dev/giarreh/contact/${id}`, {
+    fetch(`https://boolean-uk-api-server.fly.dev/giarreh/contact/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export default function ProfileWithID() {
 
 
   useEffect(() => {
-      fetch(`https://boolean-api-server.fly.dev/giarreh/contact/${id}`)
+      fetch(`https://boolean-uk-api-server.fly.dev/giarreh/contact/${id}`)
       .then(response => response.json())
       .then(data => {
         setProfile(data);

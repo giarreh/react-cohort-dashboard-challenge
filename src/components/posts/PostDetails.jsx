@@ -22,7 +22,7 @@ export default function PostDetails() {
   useEffect( () => {
     const fetchData = async () => {
         try {
-            const response = await fetch(`https://boolean-api-server.fly.dev/giarreh/contact/${contactId}`);
+            const response = await fetch(`https://boolean-uk-api-server.fly.dev/giarreh/contact/${contactId}`);
             const data = await response.json();
             setAuthor(data);
         } catch (error) {
@@ -37,11 +37,11 @@ useEffect(() => {
   const fetchData = async () => {
       try {
           // Fetch comments
-          const commentResponse = await fetch(`https://boolean-api-server.fly.dev/giarreh/post/${id}/comment`);
+          const commentResponse = await fetch(`https://boolean-uk-api-server.fly.dev/giarreh/post/${id}/comment`);
           const commentData = await commentResponse.json();
 
           // Fetch post data
-          const postResponse = await fetch(`https://boolean-api-server.fly.dev/giarreh/post/${id}`);
+          const postResponse = await fetch(`https://boolean-uk-api-server.fly.dev/giarreh/post/${id}`);
           const postData = await postResponse.json();
 
           // Update state with fetched data

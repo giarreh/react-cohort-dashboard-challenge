@@ -9,7 +9,7 @@ export default function UserProvider({children}) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://boolean-api-server.fly.dev/giarreh/contact/1');
+        const response = await fetch('https://boolean-uk-api-server.fly.dev/giarreh/contact/1');
         const userData = await response.json();
         setUser(userData);
         setLoading(false);

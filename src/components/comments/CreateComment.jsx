@@ -15,7 +15,7 @@ export default function CreateComment({ post, comments, setComments}) {
   };
 
   const handleSubmitComment = () => {
-    fetch(`https://boolean-api-server.fly.dev/giarreh/post/${id}/comment`, {
+    fetch(`https://boolean-uk-api-server.fly.dev/giarreh/post/${id}/comment`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

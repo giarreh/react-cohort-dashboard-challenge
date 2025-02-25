@@ -28,7 +28,7 @@ export default function CreatePost() {
 
     if(!title || !content) return;
 
-    fetch('https://boolean-api-server.fly.dev/giarreh/post', {
+    fetch('https://boolean-uk-api-server.fly.dev/giarreh/post', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

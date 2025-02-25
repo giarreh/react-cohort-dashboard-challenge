@@ -16,13 +16,13 @@ function App() {
   const [contacts, setContacts] = useState([])
 
   useEffect(() => {
-    fetch('https://boolean-api-server.fly.dev/giarreh/post')
+    fetch('https://boolean-uk-api-server.fly.dev/giarreh/post')
     .then(response => response.json())
     .then((data) => { setPosts(data) })
   }, []);
 
   useEffect( () => {
-    fetch('https://boolean-api-server.fly.dev/giarreh/contact')
+    fetch('https://boolean-uk-api-server.fly.dev/giarreh/contact')
     .then(response => response.json())
     .then((data) => { setContacts(data)})
   }, [])
